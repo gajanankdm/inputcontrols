@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-8">
+            <h1>two way data-binding </h1>
+            <div class="conts d-flex justify content between">
+            <input #product type="text" class="form-control mr-3">
+            <button (click)="onsearch(product)" class="btn btn-primary">sreach</button>
+            </div>
+
+         <p *ngIf="seachvalue" [innerHTML]="seachvalue" class="alert alert-warning mt-3"></p>
+        </div>
+           
+    </div>
+</div>
